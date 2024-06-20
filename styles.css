@@ -1,88 +1,47 @@
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* CSS tambahan untuk tampilan responsif */
 
-/* Global styles */
+/* Mengatur ukuran font untuk ponsel */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    font-size: 16px;
 }
 
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
+/* Mengatur header untuk tampilan ponsel */
 header {
-    background: #333;
-    color: #fff;
     padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
 }
 
 header h1 {
-    float: left;
-    margin-left: 20px;
-}
-
-nav {
-    float: right;
-}
-
-nav ul {
-    list-style: none;
+    font-size: 1.8em;
 }
 
 nav ul li {
-    display: inline;
-    margin-left: 20px;
+    display: block;
+    margin: 10px 0;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: all 0.3s ease;
+.nav-open {
+    display: none;
 }
 
-nav ul li a:hover {
-    color: #f39c12;
+/* Mengatur layout kolom untuk produk di ponsel */
+.image-row {
+    flex-direction: column;
+    align-items: center;
 }
 
-.section {
-    padding: 80px 0;
+.image-item {
     text-align: center;
+    margin: 20px 0;
+    max-width: 100%;
 }
 
-.btn {
-    display: inline-block;
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    border-radius: 5px;
+.image-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
-.btn:hover {
-    background: #f39c12;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    margin-top: 50px;
-}
-
-footer p {
-    margin: 0;
+.image-item h3 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
 }
